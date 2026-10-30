@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: week3-crud-todo-api
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /todos
+    autoDeploy: true
